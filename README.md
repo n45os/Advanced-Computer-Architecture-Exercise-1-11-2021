@@ -58,7 +58,7 @@ In order to compare the different models, I created a simple NxN matrix multipli
 The script was runned with MinorCPU and TimingSimpleCPU. Two parameters changed in the process: CPU clock and the cache model.
 ### b.
 Looking at the numbers, we can see that TimingSimpleCPU is more clock sensitive than the MinorCPU. That's probably because MinorCPU has an idling (cycle skipping) mechanism in it's pipeline architecture. Only the fact that TimingSimpleCPU doesn't have a pipeline makes it linearly dependent on the change of the CPU clock.
-![image 1](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-1-11-2021/blob/main/GEM5_L1_L2.png)
+![image 1](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-1-11-2021/blob/main/GEM5_cpu_times.png)
 
 When we use the L2 cache, we can see that there is not this much of a difference at the execution time. Although we can see that the MinorCPU is more sensitive to this change probably due to the fact that it uses a prediction mechanism. 
-![image 2](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-1-11-2021/blob/main/GEM5_cpu_times.png)
+![image 2](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-1-11-2021/blob/main/GEM5_L1_L2.png)
