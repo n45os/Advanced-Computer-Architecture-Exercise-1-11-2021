@@ -58,7 +58,21 @@ In order to compare the different models, I created a simple NxN matrix multipli
 The script was runned with MinorCPU and TimingSimpleCPU. Two parameters changed in the process: CPU clock and the cache model.
 ### b.
 Looking at the numbers, we can see that TimingSimpleCPU is more clock sensitive than the MinorCPU. That's probably because MinorCPU has an idling (cycle skipping) mechanism in it's pipeline architecture. Only the fact that TimingSimpleCPU doesn't have a pipeline makes it linearly dependent on the change of the CPU clock.
+
+
 ![image 1](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-1-11-2021/blob/main/GEM5_cpu_times.png)
 
 When we use the L2 cache, we can see that there is not this much of a difference at the execution time. Although we can see that the MinorCPU is more sensitive to this change probably due to the fact that it uses a prediction mechanism. 
+
+
 ![image 2](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-1-11-2021/blob/main/GEM5_L1_L2.png)
+
+##Exercise Review 
+Η εργασία ήταν πολύ κατανοητή από την εκφώνηση της. Το αρχείο έδινε τις απαραίτητες πληροφορίες για να ξεκινήσει κάποιος να μαθαίνει τον gem5 ακόμα και χωρίς κανένα γνωστικό υπόβαθρο. Τα βήματα για την εκτέλεση της προσομοίωσης ήταν πολύ κατανοητά και κατατοπιστικά. 
+
+Ένα σημείο που μάλλον θα χρειαστεί μια διώρθωση είναι σε ένα σημείο που εξηγεί πως να τρέξουμε τον gem5 με το αρχείο se.py και -στην δική μου έκδοση τουλαχιστον- δεν μπόρεσε να τρέξει όπως επιδεινύοταν. Μετά από μερικό ψάξιμο στο documentation βρήκα ότι στα flags αντί για "--cpu" πρέπει να χρησιμοποιηθεί το "--cpu-type" και πριν δωθεί το εκτρλέσιμο πρέπει να συνοδευτεί με το flag --cmd. 
+
+Σε γενικές γραμμές μπορώ να πω ότι δεν υπήρξε σημείο που κόλλησα και κάτι που υπήρχε γραμμενο στις οδηγείες δεν το κατλάβαινα. 
+
+
+
