@@ -64,8 +64,14 @@ Looking at the numbers, we can see that TimingSimpleCPU is more clock sensitive 
 
 When we use the L2 cache, we can see that there is not this much of a difference at the execution time. Although we can see that the MinorCPU is more sensitive to this change probably due to the fact that it uses a prediction mechanism. 
 
+If we run the same program for different memory types, we won't notice a big difference. That indicates that the program didn't really use the memory. Most of the data could be accessed from the chache.
+
 
 ![image 2](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-1-11-2021/blob/main/GEM5_L1_L2.png)
+
+![image 3](https://github.com/n45os/Advanced-Computer-Architecture-Exercise-1-11-2021/blob/main/GEM5_memoryRAM.png)
+
+
 
 ## Exercise Review 
 
