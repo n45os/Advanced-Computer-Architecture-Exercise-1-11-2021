@@ -32,12 +32,12 @@ The simulator instruction rate in instructions per second.
 
 ## 3. CPI Calculation
 We can calculate the CPI using the given formula and using the following metrics:
-- `system.cpu_cluster.cpus.dcache.overall_miss_rate::total     0.081944   # miss rate for overall accesses`
-- `system.cpu_cluster.cpus.icache.overall_miss_rate::total     0.117078                       # miss rate for overall accesses`
-- `system.cpu_cluster.l2.overall_miss_rate::total            1                       # miss rate for overall accesses`
+- `system.cpu_cluster.cpus.icache.overall_misses::total 327 # number of overall misses` 
+- `system.cpu_cluster.cpus.dcache.overall_misses::total 177 # number of overall misses`
+- `system.cpu_cluster.l2.overall_misses::total 474 # number of overall misses`
 - Also, the total instruction needed from "_sim_insts_" (5027)
 
-**CPI = 1.0102 c/i**
+**CPI = 6.32 c/i**
 
 ## 4. Brief Explanation of Some In-order CPUs
 ### [SimpleCPU](https://www.gem5.org/documentation/general_docs/cpu_models/SimpleCPU)
